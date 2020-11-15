@@ -10,39 +10,51 @@
 
     <title>Bootstrap Sandbox</title>
     <style>
-        /* Small devices (landscape phones) */
+        /*  Extra small devices (portrait phones, less than 576px)
+            No media query for `xs` since this is the default in Bootstrap */
+        
+        /* Small devices (landscape phones, 576px and up), apply this related to screen size */
+         @media (min-width: 576px) {
+             body {
+                 background: red;
+             }
+         }
 
-        @media () {}
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) {
+            body {
+                 background: blue;
+             }
+         }
+        }
 
-        /* Medium devices (tablets) */
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            body {
+                 background: green;
+             }
+         } 
+        }
 
-        @media () {}
-
-        /* Large devices (desktops) */
-
-        @media () {}
-
-        /* Extra large devices (large desktops) */
-
-        @media () {}
+        /*  Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            body {
+                background: orange;
+            }
+        }
 
         /* The given screen size or smaller */
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 576px ) {
+            body {
+                background: coral;
+            }
+        }
 
-        /* Extra small devices (portrait phones)*/
-
-        @media () {}
-
+        /* we can use max-width instead of min-width also. */
         /* Small devices (landscape phones)*/
 
-        @media () {}
-
-        /* Medium devices (tablets)*/
-
-        @media () {}
-
-        /* Large devices (desktops)*/
-
-        @media () {}
+        
     </style>
 </head>
 
