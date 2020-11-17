@@ -86,76 +86,92 @@
 
     <div class="container">
         <!--################START HERE##################-->
+        <!--List groups are a flexible and powerful component for displaying a series of unordered lists-->
+         <!--The most basic list group is an unordered list with list items and the proper classes.-->
 
         <!-- LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <ul class="list-group">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
+        <hr />
 
         <!-- LIST GROUP WITH LINKS -->
-        <ul>
-            <a href="#">My List Item One</a>
-            <a href="#">My List Item Two</a>
-            <a href="#">My List Item Three</a>
-            <a href="#">My List Item Four</a>
-            <a href="#">My List Item Five</a>
+        
+        <ul class="list-group">
+            <a class="list-group-item active" href="#">My List Item One</a>
+            <a class="list-group-item" href="#">My List Item Two</a>
+            <a class="list-group-item" href="#">My List Item Three</a>
+            <a class="list-group-item" href="#">My List Item Four</a>
+            <a class="list-group-item disabled" href="#">My List Item Five</a>
         </ul>
+        <hr />
 
-
-        <!-- CONTEXTUAL CLASSES -->
-        <ul>
-            <li>Regular List Item</li>
-            <li>Primary List Item</li>
-            <li>Secondary List Item</li>
-            <li>Success List Item</li>
-            <li>Info List Item</li>
-            <li>Warning List Item</li>
-            <li>Danger List Item</li>
-            <li>Light List Item</li>
-            <li>Dark List Item</li>
+        <!-- CONTEXTUAL CLASSES - contextual meaning color -->
+        <!-- Use contextual classes to style list items with a stateful background and color -->
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary">Regular List Item</li>
+            <li class="list-group-item list-group-item-secondary">Primary List Item</li>
+            <li class="list-group-item list-group-item-success">Secondary List Item</li>
+            <li class="list-group-item list-group-item-info">Success List Item</li>
+            <li class="list-group-item list-group-item-warning">Info List Item</li>
+            <li class="list-group-item list-group-item-danger">Warning List Item</li>
+            <li class="list-group-item list-group-item-info">Danger List Item</li>
+            <li class="list-group-item list-group-item-light">Light List Item</li>
+            <li class="list-group-item list-group-item-dark">Dark List Item</li>
         </ul>
+        <hr />
 
         <!-- FLUSH LIST GROUP -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <!-- .list-group-flush to remove some borders and rounded corners to render list group 
+            items edge-to-edge in a parent container (e.g., cards).-->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item">My List Item Two</li>
+            <li class="list-group-item active">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
+        <hr />
 
-
-        <!-- BADGE -->
-        <ul>
-            <li>My List Item One</li>
-            <li>My List Item Two</li>
-            <li>My List Item Three</li>
-            <li>My List Item Four</li>
-            <li>My List Item Five</li>
+        <!-- BADGE (display) - small count and labeling component -->
+        <!-- d-flex is display flex -->
+        <ul class="list-group">
+            <li class="list-group-item">My List Item One</li>
+            <li class="list-group-item d-flex 
+                        justify-content-between align-items-center">
+                My List Item Two 
+                <span class="badge badge-primary">30</span> 
+            </li>
+            <li class="list-group-item">My List Item Three</li>
+            <li class="list-group-item">My List Item Four</li>
+            <li class="list-group-item">My List Item Five</li>
         </ul>
+        <hr />
 
-        <!-- BREADCRUMB -->
-        <ol>
-            <li>Home</li>
+        <!-- BREADCRUMB ('/') - is made out of ordered list -->
+        <!-- Indicate the current page’s location within a navigational hierarchy that 
+            automatically adds separators via CSS -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Home</li>
         </ol>
-        <ol>
-            <li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="#">Home</a>
             </li>
-            <li>Users</li>
+            <li class="breadcrumb-item active">Users</li>
         </ol>
-        <ol>
-            <li>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
                 <a href="#">Home</a>
             </li>
-            <li>
+            <li class="breadcrumb-item">
                 <a href="#">Users</a>
             </li>
-            <li>Brad</li>
+            <li class="breadcrumb-item active">Brad</li>
         </ol>
 
     </div>
