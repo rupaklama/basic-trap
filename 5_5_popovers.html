@@ -87,20 +87,24 @@
   <div class="container">
     <!--##################START HERE####################-->
 
-    <!-- POPOVER -->
-    <button class="btn btn-danger">
+    <!-- POPOVER - similar to tooltip but need to click, need to initialize it in script tag -->
+    <button class="btn btn-danger" data-toggle="popover" 
+      data-placement="top" data-content="Hello, World! Lets change the world...">
       Toggle popover
     </button>
 
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" data-toggle="popover" 
+      data-placement="right" data-content="Hello, World! Lets change the world...">
       Toggle popover
     </button>
 
-    <button class="btn btn-warning">
+    <button class="btn btn-warning" data-toggle="popover" 
+      data-placement="bottom" data-content="Hello, World! Lets change the world...">
       Toggle popover
     </button>
 
-    <button class="btn btn-info">
+    <button class="btn btn-info" data-toggle="popover" 
+      data-placement="left" data-content="Hello, World! Lets change the world...">
       Toggle popover
     </button>
 
@@ -108,7 +112,8 @@
     <br>
 
     <!-- DISMISSIBLE POPOVER -->
-    <button class="btn btn-primary">
+    <button class="btn btn-primary" data-toggle="popover" 
+      data-placement="left" data-trigger="focus" data-content="Hello, World! Lets change the world...">
       Toggle popover
     </button>
 
@@ -128,8 +133,11 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  <script>
 
+  <script>
+   
+      $('[data-toggle="popover"]').popover()
+   
   </script>
 </body>
 
